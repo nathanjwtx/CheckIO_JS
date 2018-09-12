@@ -9,6 +9,12 @@ function secondIndex(text, symbol) {
     return sub !== -1 ? text.substring(res['index']+1).indexOf(symbol) + res['index'] + 1 : undefined
 }
 
+// alterantive solution from CheckIO
+// function secondIndex(t,s) {
+//     let r = t.indexOf(s,t.indexOf(s) + 1);
+//     return r < 0 ? undefined : r;
+// }
+
 var assert = require('assert')
 
 if (!global.is_checking) {
